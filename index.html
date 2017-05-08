@@ -1,1 +1,294 @@
+<html>
 
+<head>
+  <link rel="stylesheet" href="css/main.css">
+
+  <title></title>
+</head>
+
+<body>
+  <div class="container">
+    <aside>
+      <img class="logo" src="images/AWE%20LOGO.png">
+      <ol>
+        <li>Overview</li>
+
+        <li>Forms</li>
+        <ul>
+          <li>CheckBoxes</li>
+          <li>Radio Buttons</li>
+          <li>Search</li>
+          <li>Selected Lists</li>
+          <li>Text Inputs Textarea</li>
+        </ul>
+        <li>General</li>
+        <ul>
+          <li>Buttons</li>
+          <li>Colors</li>
+          <li>Link Focus</li>
+          <li>Read More Links</li>
+          <li>Skip Links</li>
+          <li>Typography</li>
+        </ul>
+        <li>Media</li>
+        <ul>
+          <li>Images</li>
+          <li>Site Logo</li>
+        </ul>
+        <li>Navigation</li>
+        <ul>
+          <li>Breadcrumbs</li>
+          <li>Basic Navbar</li>
+          <li>Pagination</li>
+        </ul>
+        <li>Structure</li>
+        <ul>
+          <li>Headings</li>
+          <li>Table</li>
+        </ul>
+      </ol>
+    </aside>
+    <main>
+      <section>
+        <h1>OVERVIEW</h1>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, esse.</div>
+      </section>
+      <section>
+        <h1>FORMS</h1>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, esse.</div>
+        <article>
+          <h2>Checkboxes</h2>
+          <div>
+            <form action="">
+              <h3>What is your favorite goal at Learners Guild</h3>
+              <input type="checkbox">#365 Accessible Web Elements<br>
+              <input type="checkbox">#93 Build Your Own Bootstrap<br>
+              <input type="checkbox">#251 Init 1: Bossggle Word Game<br>
+              <input type="checkbox">#259 Diving Into Open Source<br>
+              <input type="checkbox">#135 Coaching
+            </form>
+            <form action="">
+              <h3>Which framework or library do you like the most</h3>
+              <input type="checkbox">angular.js
+              <input type="checkbox">Babel
+              <input type="checkbox">ember
+              <input type="checkbox">jquery
+            </form>
+          </div>
+        </article>
+        <article>
+          <h2>Radio Buttons</h2>
+          <div>
+            <form action="">
+              <h3>Which side is the best</h3>
+              <input type="radio"> The light side<br>
+              <input type="radio"> The dark side<br>
+              <input type="radio"> The kitchen<br>
+              <input type="radio"> All the above
+            </form>
+            <form action="">
+              <h3>Best food for lunch at the farmers market</h3>
+              <input type="radio"> Tacos
+              <input type="radio"> Tamales
+              <input type="radio"> Roti
+              <input type="radio"> fruit and vegetables
+            </form>
+          </div>
+        </article>
+        <article>
+          <h2>Search</h2>
+          <div>
+            <form action="">
+              <h3>Search Input with Visible Label</h3>
+              <label for="" style="">Search</label>
+              <input type="search" name="search" id="search_1" class="search-form__input" />
+              <button type="submit"><span class="visuallyhidden">Search</button>
+            </form>
+            <form action="">
+              <h3>Hide the label element</h3>
+              <label for="" class="">Search</label>
+              <input type="search" name="search" id="" class="" placeholder="search for..." />
+              <button type="submit"><span class="visuallyhidden">Search</button>
+            </form>
+            <form action="">
+              <h3>Use aria-label</h3>
+              <input type="search" name="search" aria-label="Search">
+              <button type="submit"><span class="visuallyhidden">Search</button>
+            </form>
+          </div>
+        </article>
+        <article>
+          <h2>Selected Lists</h2>
+          <div>
+            <h3>What is your favorite type of taco</h3>
+            <select>
+            <option value="tripa">Tripa</option>
+            <option value="lengua">Lengua</option>
+            <option value="pollo">Pollo</option>
+            <option value="carne">Carne</option>
+          </select>
+            <h3>Chose your project</h3>
+            <select>
+            <option label="Chose your project" disabled selected>Chose your project</option>
+              <optgroup label="Level 0">
+              <option label="Init 1" value="1">Init 1: Bossggle Word Game
+            </option>
+              <option label="Init 2" value="2">Init 2: OOP Practice with Bike Shop</option>
+              <option label="Init 3" value="3">Init 3: Hello, Web Servers</option>
+            </optgroup>
+            <optgroup label="Level 1">
+              <option label="#144" value="144">15 Coding Exercises</option>
+              <option label="#111" value="111">Tweet-reGenerator with Node.js</option>
+            </optgroup>
+          </select>
+          </div>
+        </article>
+        <article>
+          <h2>Text Inputs and Textarea</h2>
+          <div>
+            <h3>Enter your information</h3>
+            <form action="">
+              First name: <input type="text" name="FirstName"><br> Last name: <input type="text" name="LastName" aria-describedby="error-message" required><br>
+              <div id="error-message" class="visuallyhidden">This field is required.</div><br>
+              <label for="interests">Give us a brief description of your interests</label><br>
+              <textarea id="address" name="addresstext"></textarea><br>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </article>
+      </section>
+      <section>
+        <h1>GENERAL</h1>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, esse.</div>
+        <article>
+          <h2>Buttons</h2>
+          <div>
+            <button type="button">Button</button>
+            <button type="button">Like</button>
+            <button type="button" id="print">Print Page</button>
+            <button type="button">Alert</button>
+          </div>
+        </article>
+        <article>
+          <h2>Colors</h2>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorem facilis iure praesentium neque a molestias, dignissimos perspiciatis minima libero quisquam, porro molestiae, distinctio? Cupiditate placeat molestiae possimus deserunt commodi sequi consectetur dolorum sunt deleniti ipsum, tenetur molestias itaque aliquid quam vitae delectus, officiis. Laboriosam magnam unde, quos natus distinctio.</div>
+        </article>
+        <article>
+          <h2>Link Focus</h2>
+          <div>
+            <section class="">
+              <a href="#">Focused Link</a>
+            </section>
+          </div>
+        </article>
+        <article>
+          <h2>Read More Links</h2>
+          <div>
+            <section class="">
+              <h3>aria-labelledby</h3>
+              <h4 id="headline" class="bold">Tacos</h4>
+              <p>Tacos are the best<a href="#" aria-labelledby="tacos" class="read-more">Read More</a></p>
+              <div class="break"></div>
+
+              <h3>Using aria-label</h3>
+              <h4 class="bold">Pizza</h4>
+              <p>Pizza is pretty good too<a href="#" aria-label="Learn more about pizza" class="read-more">Read More</a></p>
+              <div class="break"></div>
+
+              <h3>Aria-describedby</h3>
+              <h4 class="bold" id="info">Can I have a sandwhich?</h4>
+              <p>Of course who are we to deny you a sandwhich
+                <p class="visuallyhidden">Do you want a PB&J or Turkey</p><a href="#" aria-describedby="info" class="read-more">Read More</a></p>
+              <div class="break"></div>
+
+              <h3>Using visually hidden text</h3>
+              <h4 class="bold">Pasta</h4>
+              <p>So many different kinds of pasta
+                <p class="">Which one should I choose for marinara</p>
+                <a href="#" class="">Read More<span class=""> more about pasta</span></a></p>
+            </section>
+          </div>
+        </article>
+        <article>
+          <h2>Skip Links</h2>
+          <div>
+            <section class="">
+              <div class="">
+                <a href="#maincontent">Skip to main content</a>
+                <div class="hodor">I can talk about the different mother sauces and their derivates for days on days. So you want to know how a bechamel becomes a morney sauce keep reading or go ahead and skip this and enjoy the cheesy goodness.</div>
+                <h1>
+                  <a name="maincontent" id="maincontent"></a> Heading</h1>
+                <p>This is what is important not my random rambeling.</p>
+              </div>
+            </section>
+          </div>
+        </article>
+        <article>
+          <h2>Typography</h2>
+          <div>
+            <h3>Base</h3>
+            <div style="font: 20px/2 'Verdana'"> Verdana Medium </div>
+            <div style="font: italic 20px/2 'Verdana'"> Verdana Italic </div>
+            <div style="font: bold 20px/2 'Verdana'"> Verdana Bold </div>
+            <div style="font: bold italic 20px/2 'Verdana'"> Verdana Bold Italic </div>
+            <div class="break"></div>
+            <h3>Secondary</h3>
+            <div style="font: 20px/2 'Tahoma'"> Tahoma Light </div>
+            <div style="font: italic 20px/2 'Tahoma'"> Tahoma Light Italic </div>
+            <div style="font: 500 20px/2 'Tahoma'"> Tahoma Roman </div>
+            <div style="font: bold 20px/2 'Tahoma'"> Tahoma Italic </div>
+            <div style="font: bold italic 20px/2 'Tahoma'"> Tahoma Medium </div>
+            <div class="break"></div>
+            <h3>Tertiary</h3>
+            <div style="font: 20px/2 'Georgia'"> Georgia Bold </div>
+            <div style="font: italic 20px/2 'Georgia'"> Georgia Bold Italic </div>
+            <div style="font: bold 20px/2 'Georgia'"> Georgia Italic </div>
+            <div style="font: bold italic 20px/2 'Georgia'"> Georgia Regular </div>
+          </div>
+        </article>
+      </section>
+      <section>
+        <h1>MEDIA</h1>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, esse.</div>
+        <article>
+          <h2>Images</h2>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorem facilis iure praesentium neque a molestias, dignissimos perspiciatis minima libero quisquam, porro molestiae, distinctio? Cupiditate placeat molestiae possimus deserunt commodi sequi consectetur dolorum sunt deleniti ipsum, tenetur molestias itaque aliquid quam vitae delectus, officiis. Laboriosam magnam unde, quos natus distinctio.</div>
+        </article>
+        <article>
+          <h2>Site Logo</h2>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorem facilis iure praesentium neque a molestias, dignissimos perspiciatis minima libero quisquam, porro molestiae, distinctio? Cupiditate placeat molestiae possimus deserunt commodi sequi consectetur dolorum sunt deleniti ipsum, tenetur molestias itaque aliquid quam vitae delectus, officiis. Laboriosam magnam unde, quos natus distinctio.</div>
+        </article>
+      </section>
+      <section>
+        <h1>NAVIGATION</h1>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, esse.</div>
+        <article>
+          <h2>Breadcrumbs</h2>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorem facilis iure praesentium neque a molestias, dignissimos perspiciatis minima libero quisquam, porro molestiae, distinctio? Cupiditate placeat molestiae possimus deserunt commodi sequi consectetur dolorum sunt deleniti ipsum, tenetur molestias itaque aliquid quam vitae delectus, officiis. Laboriosam magnam unde, quos natus distinctio.</div>
+        </article>
+        <article>
+          <h2>Basic Navbar</h2>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorem facilis iure praesentium neque a molestias, dignissimos perspiciatis minima libero quisquam, porro molestiae, distinctio? Cupiditate placeat molestiae possimus deserunt commodi sequi consectetur dolorum sunt deleniti ipsum, tenetur molestias itaque aliquid quam vitae delectus, officiis. Laboriosam magnam unde, quos natus distinctio.</div>
+        </article>
+        <article>
+          <h2>Pagination</h2>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorem facilis iure praesentium neque a molestias, dignissimos perspiciatis minima libero quisquam, porro molestiae, distinctio? Cupiditate placeat molestiae possimus deserunt commodi sequi consectetur dolorum sunt deleniti ipsum, tenetur molestias itaque aliquid quam vitae delectus, officiis. Laboriosam magnam unde, quos natus distinctio.</div>
+        </article>
+      </section>
+      <section>
+        <h1>STRUCTURE</h1>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, esse.</div>
+        <article>
+          <h2>Headings</h2>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorem facilis iure praesentium neque a molestias, dignissimos perspiciatis minima libero quisquam, porro molestiae, distinctio? Cupiditate placeat molestiae possimus deserunt commodi sequi consectetur dolorum sunt deleniti ipsum, tenetur molestias itaque aliquid quam vitae delectus, officiis. Laboriosam magnam unde, quos natus distinctio.</div>
+        </article>
+        <article>
+          <h2>Tables</h2>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorem facilis iure praesentium neque a molestias, dignissimos perspiciatis minima libero quisquam, porro molestiae, distinctio? Cupiditate placeat molestiae possimus deserunt commodi sequi consectetur dolorum sunt deleniti ipsum, tenetur molestias itaque aliquid quam vitae delectus, officiis. Laboriosam magnam unde, quos natus distinctio.</div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
