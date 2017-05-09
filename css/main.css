@@ -1,3 +1,45 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 0;
+  position: relative;
+  max-width: 1440px;
+  height: 2000;
+  padding: 0;
+}
+
+.sidebar{
+    height: 100% !important;
+    width: 275;
+    position: fixed;
+    background: AliceBlue;
+    margin: 0;
+    padding: 0px 0px 0px 20px;
+}
+
+.sidenav {
+    height: 100%;
+    z-index: 1;
+    padding-top: 60px;
+}
+
+.sidenav li {
+    padding: 0px 8px 8px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+.main{
+  position: relative;
+  left: 300px;
+  overflow-y: auto !important;
+  margin-bottom: 40px;
+  padding-left: 30px;
+}
+
 .body {
   height: 100%;
   width 100%;
@@ -6,4 +48,6 @@
 .logo {
   max-height: 170px;
   max-width: 200px;
+  padding-top: 40px;
+  padding-left: 20;
 }
