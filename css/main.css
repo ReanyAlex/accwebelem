@@ -1,23 +1,23 @@
 body{
   padding: 0;
   margin: 0;
+  overflow: auto;
 }
 
 .container {
-  margin: 0;
+  margin: 0 auto;
   position: relative;
   max-width: 1440px;
-  height: 2000;
+  height: 100%;
   padding: 0;
 }
 
 .sidebar{
     height: 100% !important;
-    width: 275;
-    position: fixed;
     background: AliceBlue;
-    margin: 0;
-    padding: 0px 0px 0px 20px;
+    width: 275px;
+    position: fixed;
+    overflow-y: auto ;
 }
 
 .sidenav {
@@ -27,18 +27,18 @@ body{
 }
 
 .sidenav li {
-    padding: 0px 8px 8px 0px;
+    padding: 0px 8px 8px 10px;
     text-decoration: none;
     display: block;
 }
 
 .main{
-  position: relative;
-  left: 300px;
-  overflow-y: auto !important;
-  margin-bottom: 40px;
-  padding-left: 30px;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  margin: 0 3rem 0 400px;
+  clear: none;
 }
+
 
 .body {
   height: 100%;
@@ -48,6 +48,6 @@ body{
 .logo {
   max-height: 170px;
   max-width: 200px;
-  padding-top: 40px;
+  padding-top: 5px;
   padding-left: 20;
 }
