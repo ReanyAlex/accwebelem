@@ -443,7 +443,49 @@
 .buttons{
   height: 60px;
   width: 60px;
-  margin-right: 80px;
+  margin-right: 60px;
   float: left;
+}
 
+.button-like{
+  color: white;
+  background-color: blue;
+}
+
+.button-a11y{
+
+}
+
+/*////////////////////////////////Buttons////////////////////////////*/
+
+
+.color {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5px;
+  width: 180px;
+  height: 180px;
+  border-radius: 3px;
+  vertical-align: top;
+  border: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.color-desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  font-size: small;
+}
+
+.color-desc-alt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  color: black;
+  font-size: small;
 }
