@@ -1,8 +1,11 @@
 <html>
+
 <head>
   <link rel="stylesheet" href="css/main.css">
+  <script src="main.js"></script>
   <title>AWE STYLE GUIDE</title>
 </head>
+
 <body>
   <div class="container">
     <aside class="sidebar">
@@ -177,7 +180,7 @@
         <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, esse.</div>
         <article>
           <h2>Checkboxes</h2>
-          <div class="form-box">
+          <div class="">
             <form action="">
               <h3>What is your favorite goal at Learners Guild</h3>
               <div class="check-icles">
@@ -313,7 +316,7 @@
             <form action="">
               <h3>Search Input with Visible Label</h3>
               <div class="search-box-container">
-                <label for="" style="">Search</label>
+                <label for="" style=""> Search</label>
                 <input type="search" name="search" id="search_1" class="search-box-input" />
                 <button class="search-box-button" type="submit">Search</button>
               </div>
@@ -373,40 +376,39 @@
               <div>
                 <h3>Enter your information</h3>
                 <div class="text-field-container">
-                <form action="">
-                  <span>First name: </span><input class="text-field" type="text" name="FirstName"><br>
-                  <span class="space">Last name: </span><input class="text-field" type="text" name="LastName" aria-describedby="error-message" required><br>
-                  <div id="error-message" class="noshow">This field is required.</div><br>
-                  <label for="interests">Give us a brief description of your interests</label><br>
-                  <textarea class="text-box" id="address"></textarea><br>
-                  <input class="text-field-button" type="submit" value="Submit">
-                </form>
+                  <form action="">
+                    <span>First name: </span><input class="text-field" type="text" name="FirstName"><br>
+                    <span class="space">Last name: </span><input class="text-field" type="text" name="LastName" aria-describedby="error-message" required><br>
+                    <div id="error-message" class="noshow">This field is required.</div><br>
+                    <label for="interests">Give us a brief description of your interests</label><br>
+                    <textarea class="text-box" id="address"></textarea><br>
+                    <input class="text-field-button" type="submit" value="Submit">
+                  </form>
+                </div>
               </div>
-            </div>
-          </article>
-        </section>
-        <div class="bg-break"></div>
-        <section>
-          <h1>GENERAL</h1>
-          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, esse.</div>
-          <div class="sm-break"></div>
-          <article>
-            <h2>Buttons</h2>
-            <div class="button-container">
-              <button class="buttons" type="button">Button</button>
-              <button class="buttons button-like" type="button">Like</button>
-              <button class="buttons button-a11y" type="button" role="button" id="toggle" aria-pressed="true">A11Y<span class="noshow">all the things.</span></button>
-              <button class="buttons" type="button" id="print" aria-pressed="false">Print Page</button>
-              <button class="buttons" type="button">Alert</button>
-              <button class="buttons" type="button">Search</button>
-            </div>
-          </article>
-          <div class="sm-break"></div>
-          <article>
-            <h2>Colors</h2>
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorem facilis iure praesentium neque a molestias, dignissimos perspiciatis minima libero quisquam, porro molestiae, distinctio? Cupiditate placeat molestiae possimus deserunt
-            commodi sequi consectetur dolorum sunt deleniti ipsum, tenetur molestias itaque aliquid quam vitae delectus, officiis. Laboriosam magnam unde, quos natus distinctio.</div>
-            <div class="kss-modifier-example">
+            </article>
+      </section>
+      <div class="bg-break"></div>
+      <section>
+        <h1>GENERAL</h1>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, esse.</div>
+        <div class="sm-break"></div>
+        <article>
+          <h2>Buttons</h2>
+          <div class="button-container">
+            <button class="buttons" onclick="myButton()" type="button">Button</button>
+            <button class="buttons button-like" onclick="likeButton()" type="button">Like</button>
+            <button class="buttons button-a11y" onclick="a11yButton()" type="button" role="button" id="toggle" aria-pressed="true"><span class="noshow">all the things.</span></button>
+            <button class="buttons" onclick="printButton()" type="button" id="print" aria-pressed="false">Print Page</button>
+            <button class="buttons" onclick="alertButton()" type="button">Alert</button>
+            <button class="buttons" onclick="searchButton()" type="button"><img class="button-search" src="images/searchicon.png"></button>
+          </div>
+        </article>
+        <div class="sm-break"></div>
+        <article>
+          <h2>Colors</h2>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorem facilis iure praesentium neque a molestias, dignissimos perspiciatis minima libero quisquam, porro molestiae, distinctio? Cupiditate placeat molestiae possimus deserunt commodi sequi consectetur dolorum sunt deleniti ipsum, tenetur molestias itaque aliquid quam vitae delectus, officiis. Laboriosam magnam unde, quos natus distinctio.</div>
+          <div class="kss-modifier-example">
             <h3>Primary</h3>
             <div class="color" style="background-color: #e00000">
               <div class="color-desc">$color-cherry<br>#e00000</div>
@@ -459,13 +461,13 @@
               <div class="color-desc-alt">$color-white<br>#ffffff</div>
             </div>
           </div>
-          </article>
-          <div class="sm-break"></div>
-          <article>
+        </article>
+        <div class="sm-break"></div>
+        <article>
           <h2>Link Focus</h2>
           <div>
             <section class="">
-              <a href="#">Focused Link</a>
+              <a href="#" class="focus-link">Focused Link</a>
             </section>
           </div>
         </article>
@@ -476,25 +478,25 @@
             <section class="">
               <h3>aria-labelledby</h3>
               <h4 id="headline" class="bold">Tacos</h4>
-              <p>Tacos are the best<a href="#" aria-labelledby="tacos" class="read-more">Read More</a></p>
+              <p>Tacos are the best <a href="#" aria-labelledby="tacos" class="read-more">Read More</a></p>
               <div class="break"></div>
               <div class="ex-break"></div>
               <h3>Using aria-label</h3>
               <h4 class="bold">Pizza</h4>
-              <p>Pizza is pretty good too<a href="#" aria-label="Learn more about pizza" class="read-more">Read More</a></p>
+              <p>Pizza is pretty good too <a href="#" aria-label="Learn more about pizza" class="read-more">Read More</a></p>
               <div class="break"></div>
               <div class="ex-break"></div>
               <h3>Aria-describedby</h3>
               <h4 class="bold" id="info">Can I have a sandwhich?</h4>
               <p>Of course who are we to deny you a sandwhich
-                <p class="visuallyhidden">Do you want a PB&J or Turkey</p><a href="#" aria-describedby="info" class="read-more">Read More</a></p>
+                <p class="visuallyhidden">Do you want a PB&J or Turkey </p><a href="#" aria-describedby="info" class="read-more">Read More</a></p>
               <div class="break"></div>
               <div class="ex-break"></div>
               <h3>Using visually hidden text</h3>
               <h4 class="bold">Pasta</h4>
               <p>So many different kinds of pasta
-                <p class="">Which one should I choose for marinara</p>
-                <a href="#" class="">Read More<span class=""> more about pasta</span></a></p>
+                <p class="">Which one should I choose for marinara </p>
+                <a href="#" class="read-more">Read More<span class=""> more about pasta</span></a></p>
             </section>
           </div>
         </article>
@@ -549,7 +551,7 @@
         <article>
           <h2>Images</h2>
           <section class="">
-            <div class=""><img src="#" alt="photo description">
+            <div class=""><img class="scaled-image" src="images/AWE%20LOGO%20copy.jpg" alt="AWE Styleguide">
             </div>
           </section>
         </article>
@@ -559,29 +561,30 @@
             <h3>Logo as a link</h3>
             <div class="site-logo">
               <a href="#">
-                <img src="#" alt="Description"></img>
+                <img class="scaled-image" src="images/AWE%20LOGO%20copy.jpg" alt="Description"></img>
               </a>
             </div>
             <div class="ex-break"></div>
             <h3>Logo as a link with visible link text</h3>
             <div class="site-logo">
               <a href="#">
-                <img src="#" alt=""></img>
-                <p>Description</p>
+                <img class="scaled-image" src="images/AWE%20LOGO%20copy.jpg" alt=""></img>
+                <p>AWE Styleguide</p>
               </a>
             </div>
             <div class="ex-break"></div>
             <h3>Logo as a PNG</h3>
             <div class="site-logo">
-              <img src="#" alt="Description'"></img>
+              <img class="scaled-image" src="images/AWE%20LOGO.png" alt="Logo as a .PNG"></img>
             </div>
             <div class="ex-break"></div>
             <h3>Logo as an SVG</h3>
             <div class="site-logo">
-              <!-- <svg aria-labelledby="logo-title description" id="site_logo" data-name="site logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 132.07"><defs>&lt;style>.cls-1{fill:#e00000;}.cls-2{fill:#fff;}</style></defs><title id="logo-title">A11y style guide logo</title><desc id="description">description</desc>
-              <g><path class="cls-1" d=""/><path class="cls-2" d="" transform="translate(-6.1 -5.82)"/><path class="cls-1" d="M6.1,105.5H185v1.9H6.1Zm0,30H185v1.9H6.1Z" transform="translate(-6.1 -5.82)"/></g></svg>
-              </div>
-              <p class="kss-doc-title visuallyhidden">Accessibility Style Guide</p> -->
+              <svg width="100" height="100" aria-labelledby="logo-title description" id="site_logo" data-name="site logo" <title id="logo-title"> A11y style guide logo </title> <desc id="description">description</desc>>
+                <img class="scaled-image" src="images/AWE%20LOGO%20copy.jpg">
+              </svg>
+            </div>
+            <p class="noshow">Accessibility Style Guide</p>
           </section>
         </article>
       </section>
@@ -598,19 +601,16 @@
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#" aria-current="page">Home</a></li>
               </ol>
-
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                 <li class="breadcrumb-item"><a href="#" aria-current="page">Parent</a></li>
               </ol>
-
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                 <li class="breadcrumb-item"><a href="#">Parent</a></li>
                 <li class="breadcrumb-item"><a href="#" aria-current="page">Child</a></li>
               </ol>
             </nav>
-
             <div class="break"></div>
             <h3>Link styling with no nav element</h3>
             <div role="navigation" aria-label="breadcrumbs" class="breadcrumb">
@@ -682,18 +682,18 @@
               <ul class="pagination">
                 <li class="page-item">
                   <a class="page-link" href="#" aria-label="previous">
-                    <span class="visuallyhidden">Previous set of pages</span>
+                    <span class="noshow">Previous set of pages</span>
                     <span aria-hidden="true" role="presentation">Previous</span>
                   </a>
                 </li>
-                <li class="page-item"><a class="page-link" href="#"><span class="visuallyhidden">page </span>1</a></li>
-                <li class="page-item"><a class="page-link" href="#"><span class="visuallyhidden">page </span>2</a></li>
-                <li class="page-item active"><a class="page-link" href="#" aria-current="page"><span class="visuallyhidden">page</span>3</a></li>
-                <li class="page-item"><a class="page-link" href="#"><span class="visuallyhidden">page </span>4</a></li>
-                <li class="page-item"><a class="page-link" href="#"><span class="visuallyhidden">page </span>5</a></li>
+                <li class="page-item"><a class="page-link" href="#"><span class="noshow">page </span>1</a></li>
+                <li class="page-item"><a class="page-link" href="#"><span class="noshow">page </span>2</a></li>
+                <li class="page-item active"><a class="page-link" href="#" aria-current="page"><span class="noshow">page</span>3</a></li>
+                <li class="page-item"><a class="page-link" href="#"><span class="noshow">page </span>4</a></li>
+                <li class="page-item"><a class="page-link" href="#"><span class="noshow">page </span>5</a></li>
                 <li class="page-item ml-0_5">
                   <a class="page-link" href="#" aria-label="Next">
-                    <span class="visuallyhidden">Next set of pages</span>
+                    <span class="noshow">Next set of pages</span>
                     <span aria-hidden="true" role="presentation">Next</span>
                   </a>
                 </li>
@@ -859,8 +859,8 @@
           </section>
         </article>
       </section>
-    </main>
-    </div>
+      <img class="taco-detonation" src="images/taco-denotation.png" </main>
+      </div>
 </body>
 
 </html>
