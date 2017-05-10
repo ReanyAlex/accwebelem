@@ -24,7 +24,6 @@ body {
   padding-right: 2.5px;
 }
 
-
 /*//////////////////////////////////////NAV BAR/////////////////////////////*/
 
 .logo {
@@ -74,7 +73,6 @@ body {
   color: #000000;
 }
 
-
 /*////////////////////////////////MAIN FIELD///////////////////////////////*/
 
 h1 {
@@ -102,11 +100,17 @@ h6 {
   font-size: 0.65rem;
 }
 
+a{
+  color:#EC2d2d;
+}
+
 .main {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
+  padding-top:2em;
   margin: 0 3rem 0 350px;
   clear: none;
+  font-size: 1.2em;
 }
 
 .body {
@@ -141,7 +145,6 @@ h6 {
   background: rgba(102, 102, 102, .25);
   margin-top: 30px;
 }
-
 
 /*FOR CHECK BOXES*/
 
@@ -198,7 +201,6 @@ h6 {
   width: 20px;
 }
 
-
 /*INlINE CHECKBOXES*/
 
 .checkbox-in {
@@ -245,7 +247,6 @@ h6 {
   background-color: #EC2D2D;
 }
 
-
 /*////////////////////////////////RADIO BUTTONS////////////////////////////*/
 
 .radio {
@@ -291,7 +292,6 @@ h6 {
   border: 1px solid black;
 }
 
-
 /*INlINE RADIO*/
 
 .radio-in {
@@ -336,7 +336,6 @@ h6 {
   border: 1px solid black;
 }
 
-
 /*////////////////////////////////Search Box////////////////////////////*/
 
 .search-box-container {
@@ -357,7 +356,6 @@ h6 {
 
 .search-box-button {
   height: 22px;
-  /*border: 2px solid #EC2D2D;*/
   background-color: #EC2D2D;
   color: white;
   font-weight: bold;
@@ -370,7 +368,6 @@ h6 {
   background-color: white;
   color: #EC2D2D;
 }
-
 
 /*////////////////////////////////SELECT FIELD////////////////////////////*/
 
@@ -414,7 +411,6 @@ h6 {
   padding: 10px;
 }
 
-
 /*////////////////////////////////Text Fields////////////////////////////*/
 
 .text-field-container {
@@ -450,11 +446,9 @@ h6 {
   margin-top: 10px;
 }
 
-
 /*////////////////////////////////Buttons////////////////////////////*/
 
 .button-container {
-  /*display: inline;*/
   padding-bottom: 60px;
 }
 
@@ -487,7 +481,6 @@ h6 {
   margin-left: -25px;
   margin-top: -24px;
 }
-
 
 /*////////////////////////////////Buttons////////////////////////////*/
 
@@ -522,7 +515,6 @@ h6 {
   font-size: small;
 }
 
-
 /*/////////////////////////////////LINKS/////////////////////////////////*/
 
 .focus-link:focus {
@@ -533,14 +525,12 @@ h6 {
   color: #EC2D2D;
 }
 
-
 /*/////////////////////////////////IMAGES//////////////////////////////*/
 
 .scaled-image {
   height: 50%;
   width: 50%;
 }
-
 
 /*///////////////////////////////BREADCRUMB/////////////////////////////*/
 
@@ -592,7 +582,6 @@ ol.breadcrumb li a:hover {
   content: "/\00a0";
 }
 
-
 /*////////////////////////////////NAVIGATION////////////////////////////*/
 
 .nav {
@@ -636,7 +625,6 @@ ol.breadcrumb li a:hover {
   background-color: #ED2D2D;
 }
 
-
 /*////////////////////////////////////PAGINATION/////////////////////////*/
 
 .pagination {
@@ -667,7 +655,6 @@ ol.breadcrumb li a:hover {
   color: #1e1e1e
 }
 
-
 /*//////////////////////////////////////TABLES///////////////////////*/
 
 .tables {
@@ -679,7 +666,8 @@ th,
 td {
   text-align: left;
   padding: 8px;
-  border: 1px solid #343434
+  border: 1px solid #343434;
+  width: 20px;
 }
 
 th {
@@ -687,6 +675,9 @@ th {
   color: white;
 }
 
+.headers{
+  width: 20px;
+}
 
 /*/////////////////////////////////TACO//////////////////////////////*/
 

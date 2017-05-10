@@ -1,3 +1,19 @@
+# Team info:
+
+Team-name: #impossible-badger
+
+Authors: [@ReanyAlex, Alex Reany @cabrerarr, Roel Cabrera]
+
+JS Dev link: http://jsdev.learnersguild.org/goals/365-Accessible_Web_Elements.html
+
+Review Link: [Project Review Link](https://github.com/CabreraRR/accwebelem.git)
+
+https://github.com/CabreraRR/accwebelem.git
+https://github.com/ReanyAlex/accwebelem.git
+
+# Project Notes for Reviewer
+
+
 # Specifications
 
 #### General
