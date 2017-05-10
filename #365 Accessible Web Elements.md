@@ -16,17 +16,17 @@ Create HTML and CSS for each of the following elements. Mimic the styles from th
 
 - Forms
  - [x] Checkboxes
- - [ ] Radio Buttons
- - [ ] Search
- - [ ] Select Lists
- - [ ] Text Inputs & Textarea
+ - [x] Radio Buttons
+ - [x] Search
+ - [x] Select Lists
+ - [x] Text Inputs & Textarea
 - General
  - [ ] Buttons
  - [ ] Colors
  - [ ] Link Focus
  - [ ] Read More Links
  - [ ] Skip Links
- - [ ] Typography
+ - [x] Typography
 - Media
  - [ ] Images
  - [ ] Site Logo
@@ -35,18 +35,5 @@ Create HTML and CSS for each of the following elements. Mimic the styles from th
  - [ ] Basic Navbar
  - [ ] Pagination
 - Structure
- - [ ] Headings
+ - [x] Headings
  - [ ] Tables
-
-### Stretch
-
-- [ ] Demo page for stylized elements is published as a GitHub Pages site
-- [ ] Site includes instructions for how to include and use your framework
-- Additional elements are included in your style guide:
-  - [ ] Toggles
-  - [ ] Audio
-  - [ ] Image Gallery
-  - [ ] SVGs
-  - [ ] Videos
-  - [ ] Navbar Mobile Icon
-- [ ] Build a static web site (blog, porfolio choice, etc.) of your choice using your style guide

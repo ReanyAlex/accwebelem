@@ -3,7 +3,7 @@
 <head>
   <link rel="stylesheet" href="css/main.css">
 
-  <title></title>
+  <title>AWE STYLE GUIDE</title>
 </head>
 
 <body>
@@ -169,7 +169,6 @@
         </ol>
       </nav>
     </aside>
-
     <main class="main">
       <section>
         <h1>OVERVIEW</h1>
@@ -254,20 +253,61 @@
           <div>
             <form action="">
               <h3>Which side is the best</h3>
-              <input class="radio" name="side" type="radio"> The light side<br>
-              <input class="radio" name="side" type="radio"> The dark side<br>
-              <input class="radio" name="side" type="radio"> The kitchen<br>
-              <input class="radio" name="side" type="radio"> All the above
+              <div class="check-icles">
+                <div class="radio">
+                  <input name="side" type="radio" id="radio1">
+                  <label for="radio1"></label><br>
+                </div>
+              </div>
+              <p>The light side</p>
+              <div class="check-icles">
+                <div class="radio">
+                  <input name="side" type="radio" id="radio2">
+                  <label for="radio2"></label><br>
+                </div>
+              </div>
+              <p>The dark side</p>
+              <div class="check-icles">
+                <div class="radio">
+                  <input name="side" type="radio" id="radio3">
+                  <label for="radio3"></label><br>
+                </div>
+              </div>
+              <p>The kitchen</p>
+              <div class="check-icles">
+                <div class="radio">
+                  <input name="side" type="radio" id="radio4">
+                  <label for="radio4"></label><br>
+                </div>
+              </div>
+              <p>All the above</p>
             </form>
             <div class="ex-break"></div>
             <form action="">
               <h3>Best food for lunch at the farmers market</h3>
-              <input name="food" type="radio"> Tacos
-              <input name="food" type="radio"> Tamales
-              <input name="food" type="radio"> Roti
-              <input name="food" type="radio"> fruit and vegetables
+              <div class="check-icles">
+                <span class="radio-in">
+                <input name="food" type="radio" id="radio6">
+                <label for="radio6"></label>
+              </span>
+                <span>Tacos</span>
+                <span class="radio-in">
+                <input name="food" type="radio" id="radio7">
+                <label for="radio7"></label>
+              </span>
+                <span>Tamales</span>
+                <span class="radio-in">
+                <input name="food" type="radio" id="radio8">
+                <label for="radio8"></label>
+              </span>
+                <span>Roti</span>
+                <span class="radio-in">
+                <input name="food" type="radio" id="radio9">
+                <label for="radio9"></label>
+              </span>
+                <span>Fruit and Vegetables</span>
             </form>
-          </div>
+            </div>
         </article>
         <div class="sm-break"></div>
         <article>
@@ -275,89 +315,105 @@
           <div>
             <form action="">
               <h3>Search Input with Visible Label</h3>
-              <label for="" style="">Search</label>
-              <input type="search" name="search" id="search_1" class="search-form__input" />
-              <button type="submit"><span class="visuallyhidden">Search</button>
+              <div class="search-box-container">
+                <label for="" style="">Search</label>
+                <input type="search" name="search" id="search_1" class="search-box-input" />
+                <button class="search-box-button" type="submit">Search</button>
+              </div>
             </form>
             <div class="ex-break"></div>
             <form action="">
               <h3>Hide the label element</h3>
-              <label for="" class="">Search</label>
-              <input type="search" name="search" id="" class="" placeholder="search for..." />
-              <button type="submit"><span class="visuallyhidden">Search</button>
+              <div class="search-box-container">
+                <label for="" style="">Search</label>
+                <input type="search" name="search" id="search_1" class="search-box-input" placeholder="search for..." />
+                <button class="search-box-button" type="submit">Search</button>
+              </div>
             </form>
             <div class="ex-break"></div>
             <form action="">
               <h3>Use aria-label</h3>
-              <input type="search" name="search" aria-label="Search">
-              <button type="submit"><span class="visuallyhidden">Search</button>
+              <div class="search-box-container">
+                <label for="" style="">Search</label>
+                <input type="search" name="search" aria-label="Search" class="search-box-input">
+                <button class="search-box-button" type="submit">Search</button>
+              </div>
             </form>
-          </div>
-        </article>
-        <div class="sm-break"></div>
-        <article>
-          <h2>Selected Lists</h2>
-          <div>
-            <h3>What is your favorite type of taco</h3>
-            <select>
-            <option value="tripa">Tripa</option>
-            <option value="lengua">Lengua</option>
-            <option value="pollo">Pollo</option>
-            <option value="carne">Carne</option>
-          </select>
-            <div class="ex-break"></div>
-            <h3>Chose your project</h3>
-            <select>
-            <option label="Chose your project" disabled selected>Chose your project</option>
-              <optgroup label="Level 0">
-              <option label="Init 1" value="1">Init 1: Bossggle Word Game
-            </option>
-              <option label="Init 2" value="2">Init 2: OOP Practice with Bike Shop</option>
-              <option label="Init 3" value="3">Init 3: Hello, Web Servers</option>
-            </optgroup>
-            <optgroup label="Level 1">
-              <option label="#144" value="144">15 Coding Exercises</option>
-              <option label="#111" value="111">Tweet-reGenerator with Node.js</option>
-            </optgroup>
-          </select>
-          </div>
-        </article>
-        <div class="sm-break"></div>
-        <article>
-          <h2>Text Inputs and Textarea</h2>
-          <div>
-            <h3>Enter your information</h3>
-            <form action="">
-              First name: <input type="text" name="FirstName"><br> Last name: <input type="text" name="LastName" aria-describedby="error-message" required><br>
-              <div id="error-message" class="visuallyhidden">This field is required.</div><br>
-              <label for="interests">Give us a brief description of your interests</label><br>
-              <textarea id="address" name="addresstext"></textarea><br>
-              <input type="submit" value="Submit">
-            </form>
-          </div>
-        </article>
-      </section>
-      <div class="bg-break"></div>
-      <section>
-        <h1>GENERAL</h1>
-        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, esse.</div>
-        <div class="sm-break"></div>
-        <article>
-          <h2>Buttons</h2>
-          <div>
-            <button type="button">Button</button>
-            <button type="button">Like</button>
-            <button type="button" id="print">Print Page</button>
-            <button type="button">Alert</button>
-          </div>
-        </article>
-        <div class="sm-break"></div>
-        <article>
-          <h2>Colors</h2>
-          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorem facilis iure praesentium neque a molestias, dignissimos perspiciatis minima libero quisquam, porro molestiae, distinctio? Cupiditate placeat molestiae possimus deserunt commodi sequi consectetur dolorum sunt deleniti ipsum, tenetur molestias itaque aliquid quam vitae delectus, officiis. Laboriosam magnam unde, quos natus distinctio.</div>
-        </article>
-        <div class="sm-break"></div>
-        <article>
+            <div class="sm-break"></div>
+            <article>
+              <h2>Selected Lists</h2>
+              <div>
+                <div class="select-field">
+                  <select>
+                    <option selected hidden>What is your favorite type of taco</option>
+                    <option>Tripa</option>
+                    <option>Lengua</option>
+                    <option>Pollo</option>
+                    <option>Carne</option>
+                  </select>
+                </div>
+                <div class="ex-break"></div>
+                <div class="select-field">
+                  <select>
+                    <option selected hidden>Chose your project</option>
+                    <option label="Chose your project" disabled selected>Chose your project</option>
+                    <optgroup label="Level 0">
+                      <option label="Init 1" value="1">Init 1: Bossggle Word Game</option>
+                      <option label="Init 2" value="2">Init 2: OOP Practice with Bike Shop</option>
+                      <option label="Init 3" value="3">Init 3: Hello, Web Servers</option>
+                    </optgroup>
+                    <optgroup label="Level 1">
+                      <option label="#144" value="144">15 Coding Exercises</option>
+                      <option label="#111" value="111">Tweet-reGenerator with Node.js</option>
+                    </optgroup>
+                  </select>
+                </div>
+              </div>
+            </article>
+            <div class="sm-break"></div>
+            <article>
+              <h2>Text Inputs and Textarea</h2>
+              <div>
+                <h3>Enter your information</h3>
+                <div class="text-field-container">
+                <form action="">
+                  <span>First name: </span><input class="text-field" type="text" name="FirstName"><br>
+                  <span class="space">Last name: </span><input class="text-field" type="text" name="LastName" aria-describedby="error-message" required><br>
+                  <div id="error-message" class="noshow">This field is required.</div><br>
+                  <label for="interests">Give us a brief description of your interests</label><br>
+                  <textarea class="text-box" id="address"></textarea><br>
+                  <input class="text-field-button" type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <div class="bg-break"></div>
+        <section>
+          <h1>GENERAL</h1>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, esse.</div>
+          <div class="sm-break"></div>
+          <article>
+            <h2>Buttons</h2>
+            <div class="button-container">
+              <button class="buttons" type="button">Button</button>
+              <button class="buttons" type="button">Like</button>
+              <button class="buttons" type="button">A11Y</button>
+              <button class="buttons" type="button" id="print">Print Page</button>
+              <button class="buttons" type="button">Alert</button>
+            </div>
+          </article>
+
+
+          <div class="sm-break"></div>
+          <article>
+            <h2>Colors</h2>
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorem facilis iure praesentium neque a molestias, dignissimos perspiciatis minima libero quisquam, porro molestiae, distinctio? Cupiditate placeat molestiae possimus deserunt
+            commodi sequi consectetur dolorum sunt deleniti ipsum, tenetur molestias itaque aliquid quam vitae delectus, officiis. Laboriosam magnam unde, quos natus distinctio.</div>
+          </article>
+          <div class="sm-break"></div>
+          <article>
           <h2>Link Focus</h2>
           <div>
             <section class="">
